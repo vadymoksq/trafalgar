@@ -61,6 +61,7 @@ body {
     font-family: Mulish;
     font-style: normal;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .container {
@@ -112,7 +113,16 @@ body {
 
     &__inner {
         display: flex;
+        position: relative;
         justify-content: space-between;
+
+        &::before {
+            content: url(../img/dots.svg);
+            position: absolute;
+            z-index: -1;
+            left: -250px;
+            top: -20px;
+        }
     }
 
     &__left {
@@ -600,11 +610,15 @@ body {
         align-items: center;
 
         &::after {
-            content: url(../img/dots-fff.svg);
+            content: "";
             position: absolute;
             z-index: 1;
             left: -240px;
-            bottom: -20px;
+            bottom: 0;
+            background-image: url(../img/dots-fff.svg);
+            background-size: auto;
+            width: 130px;
+            height: 100px;
         }
 
         &::before {
