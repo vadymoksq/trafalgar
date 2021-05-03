@@ -183,7 +183,7 @@ body {
 }
 
 .services__inner::after {
-  content: url(../img/services-bg.svg);
+  content: url(../img/services/bg.svg);
   position: absolute;
   z-index: -1;
   left: -450px;
@@ -479,7 +479,7 @@ body {
   height: 18px;
   margin-right: 90px;
   cursor: pointer;
-  background-image: url(../img/testimonials-arrow.svg);
+  background-image: url(../img/testimonials/arrow.svg);
   opacity: 0.3;
 }
 
@@ -506,7 +506,7 @@ body {
   height: 18px;
   margin-left: 72px;
   cursor: pointer;
-  background-image: url(../img/testimonials-arrow.svg);
+  background-image: url(../img/testimonials/arrow.svg);
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   opacity: 0.3;
